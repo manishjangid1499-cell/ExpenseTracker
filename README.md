@@ -1,47 +1,84 @@
-# Expense Tracker (Java + MySQL)
+🛒 MJKart — E-Commerce Product Catalog (HTML/CSS/JS)
 
-## 📌 Project Overview
-This is a **console-based Expense Tracker application** built with **Java** and **MySQL**.  
-It allows users to record, update, delete, and view daily expenses.  
-Additionally, it provides **category-wise** and **monthly summaries**.
+📌 Project Overview
+MJKart is a responsive Amazon/Flipkart-inspired storefront built using HTML, CSS, and JavaScript.
+It provides a clean UI with 100+ products, advanced filters, cart system, and a product showcase — all running client-side with no backend required.
 
-## 🚀 Features
-- Add, view, update, and delete expenses  
-- Category-wise expense summary  
-- Monthly expense summary  
-- MySQL database integration using JDBC  
+🚀 Features
 
-## 🛠 Tech Stack
-- Java (Core + JDBC)
-- MySQL
-- MySQL Connector/J
+📦 10 categories × 10 products (100+ items) auto-generated with images
 
-## 📂 Project Structure
-```
-ExpenseTracker/
- ├── src/                   # Java source code
- ├── lib/                   # External libraries (e.g., MySQL connector)
- ├── sql/                   # Database schema
- └── README.md              # Project documentation
-```
+🔍 Button-triggered search functionality
 
-## ⚙️ Setup Instructions
-1. Import the project into your IDE (Eclipse/IntelliJ/NetBeans).  
-2. Add the MySQL Connector JAR file to your classpath (`lib/` folder).  
-3. Run the SQL script inside `sql/expense_tracker.sql` in MySQL Workbench.  
-4. Update `DBConnection.java` with your MySQL username & password.  
-5. Run `ExpenseTrackerApp.java`.  
+🏷️ Category pills with price, rating, and brand filters
 
-## 🎯 Usage
-Run the application and use the console menu:  
-1. Add Expense  
-2. View Expenses  
-3. Update Expense  
-4. Delete Expense  
-5. Category Summary  
-6. Monthly Summary  
-7. Exit  
+↕️ Sorting & Pagination for easy browsing
 
-## 👤 Author
-Developed by [Manish Jangid]
+🛍️ Product modal with Add to Cart / Buy Now
 
+🛒 Cart drawer with quantity controls, totals, discounts (localStorage persistence)
+
+🎠 Banner carousel & modern responsive UI
+
+🛠 Tech Stack
+
+HTML5
+
+CSS3 (Responsive Design, Modern UI)
+
+JavaScript (ES6)
+
+📂 Project Structure
+MJKart/
+ ├── index.html         # Main entry point
+ ├── styles.css         # Styling and layout
+ ├── app.js             # Core functionality (products, cart, filters)
+ ├── assets/            # (Optional) Images, icons, or custom media
+ └── README.md          # Project documentation
+
+⚙️ Setup Instructions
+Run Locally
+
+Unzip the project.
+
+Open index.html in a modern browser (Chrome/Edge/Firefox).
+
+👉 For best results, run on a local server:
+
+VS Code → Install Live Server → Right-click index.html → Open with Live Server
+
+Python (optional):
+
+python -m http.server 8000
+
+
+Open http://localhost:8000
+
+💡 Everything is client-side; no backend required.
+
+🎯 Usage
+
+Browse products by category
+
+Apply filters (price, rating, brand)
+
+Search products (click "Search" to update results)
+
+Open product details → Add to Cart / Buy Now
+
+View cart with live totals, discounts, and persistence
+
+🎨 Customization
+
+🛍️ Products → Edit buildProducts() in app.js (brands, prices, categories)
+
+🖼️ Images → Uses picsum.photos
+; replace with your own CDN/product images
+
+🎨 UI → Modify styles.css for colors, spacing, and layout
+
+🔧 Extend Features → Add wishlists, login, order history, etc.
+
+👤 Author
+
+Developed by Manish Jangid 
